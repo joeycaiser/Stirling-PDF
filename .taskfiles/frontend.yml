@@ -84,6 +84,12 @@ tasks:
     desc: "Start frontend dev server"
     deps: [prepare]
     ignore_error: true
+    vars:
+      PORT: '{{.PORT | default "5173"}}'
+      BACKEND_URL: '{{.BACKEND_URL | default "http://localhost:8080"}}'
+    env:
+      VITE_DEV_PORT: '{{.PORT}}'
+      BACKEND_URL: '{{.BACKEND_URL}}'
     cmds:
       - npx vite
 
@@ -91,6 +97,12 @@ tasks:
     desc: "Start frontend dev server in core mode"
     deps: [prepare]
     ignore_error: true
+    vars:
+      PORT: '{{.PORT | default "5173"}}'
+      BACKEND_URL: '{{.BACKEND_URL | default "http://localhost:8080"}}'
+    env:
+      VITE_DEV_PORT: '{{.PORT}}'
+      BACKEND_URL: '{{.BACKEND_URL}}'
     cmds:
       - npx vite --mode core
 
@@ -98,6 +110,12 @@ tasks:
     desc: "Start frontend dev server in proprietary mode"
     deps: [prepare]
     ignore_error: true
+    vars:
+      PORT: '{{.PORT | default "5173"}}'
+      BACKEND_URL: '{{.BACKEND_URL | default "http://localhost:8080"}}'
+    env:
+      VITE_DEV_PORT: '{{.PORT}}'
+      BACKEND_URL: '{{.BACKEND_URL}}'
     cmds:
       - npx vite --mode proprietary
 
@@ -105,6 +123,12 @@ tasks:
     desc: "Start frontend dev server in SaaS mode"
     deps: [prepare:saas]
     ignore_error: true
+    vars:
+      PORT: '{{.PORT | default "5173"}}'
+      BACKEND_URL: '{{.BACKEND_URL | default "http://localhost:8080"}}'
+    env:
+      VITE_DEV_PORT: '{{.PORT}}'
+      BACKEND_URL: '{{.BACKEND_URL}}'
     cmds:
       - npx vite --mode saas
 
@@ -119,6 +143,12 @@ tasks:
     desc: "Start frontend dev server in prototypes mode"
     deps: [prepare]
     ignore_error: true
+    vars:
+      PORT: '{{.PORT | default "5173"}}'
+      BACKEND_URL: '{{.BACKEND_URL | default "http://localhost:8080"}}'
+    env:
+      VITE_DEV_PORT: '{{.PORT}}'
+      BACKEND_URL: '{{.BACKEND_URL}}'
     cmds:
       - npx vite --mode prototypes
 
