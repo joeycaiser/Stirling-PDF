@@ -1,5 +1,11 @@
-blank_issues_enabled: true
+blank_issues_enabled: false
 contact_links:
-  - name: 💬 Discord Server
-    url: https://discord.gg/HYmhKj45pU
-    about: You can join our Discord server for real time discussion and support
+  - name: 💬 Discussions & Questions
+    url: https://github.com/Stirling-Tools/Stirling-PDF/discussions
+    about: Please use GitHub Discussions for general questions and community support.
+  - name: 📖 Documentation
+    url: https://stirlingtools.com/docs
+    about: Check the official documentation before submitting an issue.
+  - name: 🔒 Security Vulnerabilities
+    url: https://github.com/Stirling-Tools/Stirling-PDF/security/advisories/new
+    about: Please report security vulnerabilities privately via GitHub Security Advisories.
